@@ -1,0 +1,23 @@
+PODS:
+  - ModuloSuporte (0.1.0):
+    - SnapKit
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - ModuloSuporte (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  ModuloSuporte:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ModuloSuporte: d0d94f298e1a06995d4483f04ceb70e1023dd22c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: eddfcc842059526a4ec0bac797581b4170bd06e9
+
+COCOAPODS: 1.10.1
