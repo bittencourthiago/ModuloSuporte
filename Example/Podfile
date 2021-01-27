@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ModuloSuporte_Example' do
+  pod 'ModuloSuporte', :path => '../'
+
+  target 'ModuloSuporte_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
