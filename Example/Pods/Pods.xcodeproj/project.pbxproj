@@ -785,10 +785,11 @@
 			};
 			name = Release;
 		};
-		482D71B287027E345DE59AC2962D2D32 /* Release */ = {
+		5426B65DB75D7F06F4EF628181B111B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F935E4D713D377C3949952E9E8132C0 /* ModuloSuporte.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -800,7 +801,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ModuloSuporte/ModuloSuporte-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ModuloSuporte/ModuloSuporte-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ModuloSuporte/ModuloSuporte.modulemap";
 				PRODUCT_MODULE_NAME = ModuloSuporte;
@@ -978,10 +979,11 @@
 			};
 			name = Debug;
 		};
-		C252C36F382A72018A12CC473C4F85DC /* Debug */ = {
+		A0AE2F77B2FC017F36A45D4E1D1A5780 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA28C1EA0C0C7D9F3E35CDBD8F12EAC2 /* ModuloSuporte.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -993,7 +995,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ModuloSuporte/ModuloSuporte-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ModuloSuporte/ModuloSuporte-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ModuloSuporte/ModuloSuporte.modulemap";
 				PRODUCT_MODULE_NAME = ModuloSuporte;
@@ -1119,8 +1121,8 @@
 		57A7508CDEADDD1AA0E18FD676D4F972 /* Build configuration list for PBXNativeTarget "ModuloSuporte" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C252C36F382A72018A12CC473C4F85DC /* Debug */,
-				482D71B287027E345DE59AC2962D2D32 /* Release */,
+				A0AE2F77B2FC017F36A45D4E1D1A5780 /* Debug */,
+				5426B65DB75D7F06F4EF628181B111B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
