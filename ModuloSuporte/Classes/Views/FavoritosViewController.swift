@@ -7,12 +7,9 @@
 
 import UIKit
 import SnapKit
-import TelaDeDetalhes
 
 public class FavoritosViewController: UIViewController {
     
-    var tabBar:UITabBar = UITabBar()
-
     //MARK: - Criando a tela
     
     private lazy var containerView: UIView = {
@@ -81,7 +78,6 @@ extension FavoritosViewController: ViewConfiguration {
         containerView.addSubview(labelDate)
         view.addSubview(lineView)
         view.addSubview(collectionView)
-        view.addSubview(tabBar)
     }
     
     func setupConstraints() {
@@ -115,12 +111,6 @@ extension FavoritosViewController: ViewConfiguration {
             make.right.equalTo(view.snp.right).offset(-10)
             make.bottom.equalTo(view.snp.bottom).inset(60)
         }
-        tabBar.snp.makeConstraints { (make) in
-            make.bottom.equalTo(view.snp.bottom).offset(0)
-            make.left.equalTo(view.snp.left).offset(0)
-            make.right.equalTo(view.snp.right).inset(0)
-            make.height.equalTo(60)
-        }
     }
     
     func configureViews() {
@@ -150,7 +140,7 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         guard let nc = self.navigationController else {return}
-        
+
         let vcDetails = Detalhes(navigationController: nc)
         vcDetails.abreDetalhes(initials: "BTC", currentValueOFCoin: "31,010.20", isFavorite: false, hourSell: "310,010.20", monthSell: "1,310.010.20", yearSell: "100,310.010.20")
         nc.isNavigationBarHidden = false
