@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		223D6DE2D80DC1CA65DADADF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		223D6DE2D80DC1CA65DADADF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4F392F75D2FC4378E4C55F0A /* Pods-ModuloSuporte_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloSuporte_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ModuloSuporte_Tests/Pods-ModuloSuporte_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ModuloSuporte_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuloSuporte_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,9 +41,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		658F05B0A77F96E3F52B7BB2 /* Pods_ModuloSuporte_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuloSuporte_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F262C465C8A272FD6AE19D /* ModuloSuporte.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ModuloSuporte.podspec; path = ../ModuloSuporte.podspec; sourceTree = "<group>"; };
+		88F262C465C8A272FD6AE19D /* ModuloSuporte.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModuloSuporte.podspec; path = ../ModuloSuporte.podspec; sourceTree = "<group>"; };
 		95E135336BD2A3DE48B130FA /* Pods-ModuloSuporte_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloSuporte_Example.debug.xcconfig"; path = "Target Support Files/Pods-ModuloSuporte_Example/Pods-ModuloSuporte_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B1C1F4FCC1A723DC56A511CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B1C1F4FCC1A723DC56A511CD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CEE060EF0A766C7763A8049F /* Pods_ModuloSuporte_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuloSuporte_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E306EE0D08087848D04A68D9 /* Pods-ModuloSuporte_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloSuporte_Tests.release.xcconfig"; path = "Target Support Files/Pods-ModuloSuporte_Tests/Pods-ModuloSuporte_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FCA082CFAB1CDD1218CC9934 /* Pods-ModuloSuporte_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuloSuporte_Example.release.xcconfig"; path = "Target Support Files/Pods-ModuloSuporte_Example/Pods-ModuloSuporte_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,7 +86,6 @@
 				4F392F75D2FC4378E4C55F0A /* Pods-ModuloSuporte_Tests.debug.xcconfig */,
 				E306EE0D08087848D04A68D9 /* Pods-ModuloSuporte_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -421,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -467,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
