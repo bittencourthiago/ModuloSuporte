@@ -86,6 +86,7 @@ class TelaDeDetalhesViewController: UIViewController {
         super.viewDidLoad()
         setupViewConfiguration()
         self.title = "\(viewModel.initials)"
+        self.imagemPlace.image = viewModel.image
     }
     
     func defaultLabelValues(text:String, fontSize:CGFloat = 18) -> UILabel {
@@ -154,9 +155,10 @@ extension TelaDeDetalhesViewController: ViewConfiguration {
             
         }
         imagemPlace.snp.makeConstraints { (make) in
-            make.top.equalTo(headerContainerView.snp.top).offset(30)
-            make.left.equalTo(headerContainerView).offset(20)
-            make.right.equalTo(headerContainerView).inset(20)
+            make.top.equalTo(headerContainerView.snp.top).offset(60)
+            make.centerX.equalTo(headerContainerView)
+            make.height.equalTo(50)
+            make.width.equalTo(50)
         }
         centralButton.snp.makeConstraints { (make) in
             make.top.equalTo(headerContainerView).offset(200)
@@ -216,3 +218,4 @@ extension TelaDeDetalhesViewController: ViewConfiguration {
     }
     
 }
+
