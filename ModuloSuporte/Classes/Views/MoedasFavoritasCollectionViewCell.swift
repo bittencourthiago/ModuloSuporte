@@ -44,11 +44,10 @@ class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
         return label
     }()
     
-    init(_ moeda:[String:Any], frame: CGRect){
+    override init(frame: CGRect){
         super.init(frame: frame)
         setupViewConfiguration()
         configuraEstiloCelula()
-        self.moeda = moeda
     }
     required init?(coder: NSCoder) {
 
@@ -62,6 +61,7 @@ class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 15
         self.backgroundColor = UIColor(red: 139/255, green: 153/255, blue: 90/255, alpha: 1)
     }
+    
     func configuraDadosCelula() {
         
         

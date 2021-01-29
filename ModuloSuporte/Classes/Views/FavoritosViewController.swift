@@ -69,14 +69,10 @@ public class FavoritosViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupViewConfiguration()
-        filtraMoedas()
     }  
     
     //MARK: - Methods
     
-    func filtraMoedas() {
-        viewModel.geraArrayCelulas(moedas: dados, collectionView: collectionView )
-    }
 }
 
 //MARK: - ViewConfiguration
@@ -139,13 +135,15 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return viewModel.arrayDeMoedasFavoritas.count
+        return dados.count
     }
     
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MoedasFavoritasCollectionViewCell
         
+        
+
         //let cell = viewModel.arrayDeCelulas[indexPath.row]
         
         return cell
