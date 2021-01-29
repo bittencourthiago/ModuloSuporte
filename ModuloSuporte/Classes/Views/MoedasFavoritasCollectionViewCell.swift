@@ -7,11 +7,12 @@
 
 import UIKit
 
-class CellCollectionViewCell: UICollectionViewCell {
+class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
 
     //MARK: - Váriáveis
     
     let corDaFonte = UIColor(red: 230/255, green: 233/255, blue: 212/255, alpha: 1)
+    var moeda:[String:Any] = [:]
 
     //MARK: - Criação dos itens da célula
     
@@ -43,10 +44,11 @@ class CellCollectionViewCell: UICollectionViewCell {
         return label
     }()
 
-    override init(frame: CGRect){
+    init(_ moeda:[String:Any], frame: CGRect){
         super.init(frame: frame)
         setupViewConfiguration()
         configuraEstiloCelula()
+        self.moeda = moeda
     }
     required init?(coder: NSCoder) {
 
@@ -62,13 +64,32 @@ class CellCollectionViewCell: UICollectionViewCell {
     }
     func configuraDadosCelula() {
         
+        if let nome = moeda["nome"] as? String {
+            self.labelNome.text = nome
+        } else {
+            self.labelNome.text = "-----"
+        }
+        
+        if let sigla = moeda["id"] as? String{
+            self.labelSigla.text = sigla
+        } else {
+            self.labelSigla.text = "---"
+        }
+        
+        
+        if let value = moeda["valorAtual"] as? String {
+            self.labelValor.text = String(format: "$ %.3f", value)
+        } else {
+            self.labelValor.text = "0"
+        }
+        
     }
     
 }
 
 //MARK: - ViewConfiguration
 
-extension CellCollectionViewCell: ViewConfiguration{
+extension MoedasFavoritasCollectionViewCell: ViewConfiguration{
 
     func buildViewHierarchy() {
         self.addSubview(labelNome)

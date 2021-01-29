@@ -12,6 +12,7 @@ public class FavoritosViewController: UIViewController {
     //MARK: - atributes
     var defaults = UserDefaults.standard
     var dados:[[String:Any]] = [[:]]
+    var viewModel = FavoritosViewModel()
     
     //MARK: - Criando a tela
     
@@ -50,7 +51,7 @@ public class FavoritosViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         collectionView.backgroundColor = .black
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(CellCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(MoedasFavoritasCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -61,19 +62,21 @@ public class FavoritosViewController: UIViewController {
 
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        print(dados)
-        if let favoritos = UserDefaults.standard.value(forKey: "favoritos") {
-            print(favoritos)
-        } else {
-            print("Vazio")
-        }
+        
 
     }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupViewConfiguration()
+        filtraMoedas()
     }  
+    
+    //MARK: - Methods
+    
+    func filtraMoedas() {
+        viewModel.geraArrayCelulas(moedas: dados, collectionView: collectionView )
+    }
     
 }
 
@@ -137,14 +140,12 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        guard let favoritos  = defaults.value(forKey: "favoritos") as? [String] else { return 0 }
-        
-        return favoritos.count
+        return dados.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CellCollectionViewCell
+        let cell = viewModel.arrayDeCelulas as! UICollectionViewCell
         
         return cell
     

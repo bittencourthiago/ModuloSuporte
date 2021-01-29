@@ -31,7 +31,7 @@
 		622FAFD491D38DDB04CF03C02E2E5606 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
 		76B1FCB3522666E3FD8AC26DB7A56238 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
 		7BAC10147C44DE9108F35848EFB5CF72 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
-		8179F6708EF69494B300969495B51641 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CFA62FC7854D1A553673D21EAE1EBB /* CellCollectionViewCell.swift */; };
+		8179F6708EF69494B300969495B51641 /* MoedasFavoritasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CFA62FC7854D1A553673D21EAE1EBB /* MoedasFavoritasCollectionViewCell.swift */; };
 		81E15F70EADA1387E9BB9D5E83CA7E40 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
 		828E56C53C22C6E585E95A4A5B5E015F /* ModuloSuporte-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D49B67EF881869CD3320107BD4A2A5 /* ModuloSuporte-dummy.m */; };
 		848D00308498C96600E504CE8346E5D4 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
@@ -146,7 +146,7 @@
 		91E1551F7E536AA018609EF7770FA43F /* Pods-ModuloSuporte_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModuloSuporte_Tests.modulemap"; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1CFA62FC7854D1A553673D21EAE1EBB /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1CFA62FC7854D1A553673D21EAE1EBB /* MoedasFavoritasCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MoedasFavoritasCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		A6BDD325BF7D3381E7B26B2C5D85C49A /* Detalhes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Detalhes.swift; path = ModuloSuporte/Classes/Detalhes.swift; sourceTree = "<group>"; };
 		A9B02A80D4D511A9C87C2129C4D304CE /* ModuloSuporte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ModuloSuporte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,7 +231,7 @@
 		16477295F6D7FE96EC75838CE0CF85FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A1CFA62FC7854D1A553673D21EAE1EBB /* CellCollectionViewCell.swift */,
+				A1CFA62FC7854D1A553673D21EAE1EBB /* MoedasFavoritasCollectionViewCell.swift */,
 				0BAAF78B2A297C06EBEA7DC956FB4067 /* FavoritosViewController.swift */,
 				645062FB9121925F13721D0B41889C43 /* TelaDeDetalhesViewController.swift */,
 			);
@@ -642,7 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8179F6708EF69494B300969495B51641 /* CellCollectionViewCell.swift in Sources */,
+				8179F6708EF69494B300969495B51641 /* MoedasFavoritasCollectionViewCell.swift in Sources */,
 				3712E52270926D454526CF5CE1DEF6CE /* Detalhes.swift in Sources */,
 				D3A89B84A5EC9F8CEC135C5F35B37640 /* FavoritosViewController.swift in Sources */,
 				828E56C53C22C6E585E95A4A5B5E015F /* ModuloSuporte-dummy.m in Sources */,
