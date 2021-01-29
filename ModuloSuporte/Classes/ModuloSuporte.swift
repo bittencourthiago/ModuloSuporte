@@ -14,7 +14,7 @@ public class ModuloSuporte {
         self.nc = navigationController
         
     }
-    public func abreDetalhes(initials:String,currentValueOFCoin:String, isFavorite:Bool, hourSell:String, monthSell:String, yearSell:String, image:UIImage) {
+    public func abreDetalhes(initials:String,currentValueOFCoin:Double, isFavorite:Bool, hourSell:Double, monthSell:Double, yearSell:Double, image:UIImage) {
     
         let viewModel = TelaDeDetalhesViewModel(initials, currentValueOFCoin, isFavorite, hourSell, monthSell, yearSell, image)
         let tela = TelaDeDetalhesViewController(viewModel: viewModel)
