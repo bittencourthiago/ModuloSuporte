@@ -30,7 +30,7 @@ class FavoritosViewModel {
         }
         for moedaFavorita in arrayDeMoedasFavoritas {
             
-            arrayDeCelulas.append(MoedasFavoritasCollectionViewCell(moedaFavorita, frame: .null))
+            arrayDeCelulas.append(MoedasFavoritasCollectionViewCell(moedaFavorita, frame: .zero))
             
             
         }

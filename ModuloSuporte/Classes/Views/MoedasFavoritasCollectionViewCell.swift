@@ -43,7 +43,7 @@ class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
         
         return label
     }()
-
+    
     init(_ moeda:[String:Any], frame: CGRect){
         super.init(frame: frame)
         setupViewConfiguration()
