@@ -28,10 +28,14 @@ public class TelaDeDetalhesViewModel {
         self.initials = initials
         if let favoritos = defaults.value(forKey: "favoritos") as? [String] {
             self.favoritos = favoritos
+            if favoritos.contains(initials) {
+                self.isFavorite = true
+            }
             
         } else {
             self.favoritos = []
         }
+        
         
     }
     
