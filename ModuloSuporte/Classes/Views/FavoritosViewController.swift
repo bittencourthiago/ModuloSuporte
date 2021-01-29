@@ -144,7 +144,7 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MoedasFavoritasCollectionViewCell
         
         //let cell = viewModel.arrayDeCelulas[indexPath.row]
         
