@@ -11,7 +11,7 @@ import SnapKit
 public class FavoritosViewController: UIViewController {
     //MARK: - atributes
     var defaults = UserDefaults.standard
-    var viewModel = FavoritosViewModel()
+    var dados:[[String:Any]] = [[:]]
     
     //MARK: - Criando a tela
     
@@ -61,8 +61,9 @@ public class FavoritosViewController: UIViewController {
 
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        if let celulas = UserDefaults.standard.value(forKey: "celulas") {
-            print(celulas)
+        print(dados)
+        if let favoritos = UserDefaults.standard.value(forKey: "favoritos") {
+            print(favoritos)
         } else {
             print("Vazio")
         }
@@ -72,9 +73,7 @@ public class FavoritosViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupViewConfiguration()
-    }
-    
-    
+    }  
     
 }
 

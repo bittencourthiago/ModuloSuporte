@@ -59,6 +59,7 @@
 		DF01E9848E5805AE107D62EEF9C6317C /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
 		E3163E41F53E716D9B21F5887909300D /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
 		F04A53A025C472EF00D9744F /* FavoritosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A539F25C472EF00D9744F /* FavoritosViewModel.swift */; };
+		F04A53B025C47FE200D9744F /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04A53AF25C47FE200D9744F /* DataSingleton.swift */; };
 		F7BB43CCE1D6003EB17C0403A67A3519 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
 		FC4AFEBEED2BC2F018013DBDDE3D9808 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6688FE66950239FA4E48412FBB68E22 /* Foundation.framework */; };
 		FCB7921D544CC8E1DBA6B0E05C58B77F /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
@@ -174,6 +175,7 @@
 		EA28C1EA0C0C7D9F3E35CDBD8F12EAC2 /* ModuloSuporte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ModuloSuporte.debug.xcconfig; sourceTree = "<group>"; };
 		F026C50C3184FD72FB1CBF0DB59D57F3 /* Pods_ModuloSuporte_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuloSuporte_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04A539F25C472EF00D9744F /* FavoritosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewModel.swift; sourceTree = "<group>"; };
+		F04A53AF25C47FE200D9744F /* DataSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
 		F243F5593545AA79B1860D94FF76C1D3 /* ModuloSuporte-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ModuloSuporte-prefix.pch"; sourceTree = "<group>"; };
 		F3D217CF680E8B84241494713D6A7A4A /* Pods-ModuloSuporte_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuloSuporte_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F57AE6E94AAF0EA06D243B983BF551BC /* Pods-ModuloSuporte_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModuloSuporte_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				3065CAC1FFDA2A57755C8C9F66654C5F /* ViewConfiguration.swift */,
+				F04A53AF25C47FE200D9744F /* DataSingleton.swift */,
 			);
 			name = Helper;
 			path = ModuloSuporte/Classes/Helper;
@@ -648,6 +651,7 @@
 				BD59D287DA509DB86C7BED5471A97BF8 /* TelaDeDetalhesViewController.swift in Sources */,
 				B5F30EA64DAF615FF15274F8C9CF0A41 /* TelaDeDetalhesViewModel.swift in Sources */,
 				9BF7C8E3B4902E62941B7250A872BC17 /* ViewConfiguration.swift in Sources */,
+				F04A53B025C47FE200D9744F /* DataSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
