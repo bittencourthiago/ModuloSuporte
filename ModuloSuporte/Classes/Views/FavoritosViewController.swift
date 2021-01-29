@@ -140,12 +140,12 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return dados.count
+        return viewModel.arrayDeMoedasFavoritas.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    
-        let cell = viewModel.arrayDeCelulas as! UICollectionViewCell
+        
+        let cell = viewModel.arrayDeCelulas[indexPath.row]
         
         return cell
     
