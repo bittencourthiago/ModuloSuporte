@@ -64,6 +64,8 @@ class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
     }
     func configuraDadosCelula() {
         
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        
         if let nome = moeda["nome"] as? String {
             self.labelNome.text = nome
         } else {
