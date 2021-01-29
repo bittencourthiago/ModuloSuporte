@@ -55,7 +55,7 @@ public class TelaDeDetalhesViewModel {
             isFavorite = !isFavorite
             favoritos = favoritos.filter(){$0 != initials}
             
-            defaults.setValue(favoritos, forKey: initials)
+            defaults.setValue(favoritos, forKey: "favoritos")
             
             print("Remove")
         } else {
@@ -63,7 +63,7 @@ public class TelaDeDetalhesViewModel {
             
             favoritos.append(initials)
             
-            defaults.setValue(favoritos, forKey: initials)
+            defaults.setValue(favoritos, forKey: "favoritos")
             isFavorite = !isFavorite
         }
     }
