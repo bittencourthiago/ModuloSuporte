@@ -17,9 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if let nc = navigationController  {
-            nc.pushViewController(FavoritosViewController(), animated: true)
-        }
     }
 
     override func didReceiveMemoryWarning() {
