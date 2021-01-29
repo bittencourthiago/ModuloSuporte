@@ -18,8 +18,10 @@ class FavoritosViewModel {
         if let favoritos = UserDefaults.standard.value(forKey: "favoritos") as? [String] {
             print(favoritos)
             for moeda in moedas {
-                if favoritos.contains(moeda["id"] as! String) {
-                    arrayDeMoedasFavoritas.append(moeda)
+                if let id = moeda["id"] as? String {
+                    if favoritos.contains(id) {
+                        arrayDeMoedasFavoritas.append(moeda)
+                    }
                 }
             }
             
