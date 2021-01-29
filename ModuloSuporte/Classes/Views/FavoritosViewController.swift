@@ -58,7 +58,7 @@ public class FavoritosViewController: UIViewController {
 
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        print(UserDefaults.standard.value(forKey: "age"))
+        print(UserDefaults.standard.value(forKey: "favoritos"))
     }
     
     public override func viewDidLoad() {

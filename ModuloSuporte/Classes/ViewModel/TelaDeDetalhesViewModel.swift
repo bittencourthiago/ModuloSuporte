@@ -17,6 +17,7 @@ public class TelaDeDetalhesViewModel {
     var hourSell:Double
     var monthSell:Double
     var yearSell:Double
+    var favoritos:[String]
     
     init(_ initials:String, _ currentValueOFCoin:Double,_ isFavorite:Bool,_ hourSell:Double,_ monthSell:Double,_ yearSell:Double, _ image:UIImage) {
         self.currentValueOFCoin = currentValueOFCoin
@@ -25,6 +26,13 @@ public class TelaDeDetalhesViewModel {
         self.hourSell = hourSell
         self.yearSell = yearSell
         self.initials = initials
+        if let favoritos = defaults.value(forKey: "favoritos") as? [String] {
+            self.favoritos = favoritos
+            
+        } else {
+            self.favoritos = []
+        }
+        
     }
     
     func buttonApearence() -> String {
@@ -45,12 +53,17 @@ public class TelaDeDetalhesViewModel {
     @objc func buttonFuncionality() {
         if (isFavorite) {
             isFavorite = !isFavorite
+            favoritos = favoritos.filter(){$0 != initials}
             
-            defaults.setValue(21, forKey: "age")
+            defaults.setValue(favoritos, forKey: initials)
             
             print("Remove")
         } else {
             print("Adiciona")
+            
+            favoritos.append(initials)
+            
+            defaults.setValue(favoritos, forKey: initials)
             isFavorite = !isFavorite
         }
     }
