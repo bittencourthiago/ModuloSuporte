@@ -16,7 +16,7 @@ public class TelaDeDetalhesViewModel {
     var monthSell:String
     var yearSell:String
     
-    init(_ initials:String, _ currentValueOFCoin:String,_ isFavorite:Bool,_ hourSell:String,_ monthSell:String,_ yearSell:String) {
+    init(_ initials:String, _ currentValueOFCoin:String,_ isFavorite:Bool,_ hourSell:String,_ monthSell:String,_ yearSell:String, _ image:UIImage) {
         self.currentValueOFCoin = currentValueOFCoin
         self.isFavorite = isFavorite
         self.monthSell = monthSell
