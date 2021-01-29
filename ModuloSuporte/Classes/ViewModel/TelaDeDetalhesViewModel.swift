@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 public class TelaDeDetalhesViewModel {
+    let defaults = UserDefaults.standard
     
     var initials:String
     var currentValueOFCoin:Double
@@ -34,6 +36,7 @@ public class TelaDeDetalhesViewModel {
     func highlightedButtonApearence() -> String {
         
         let apearence = !isFavorite ? "ADICIONADO! ✅": "REMOVIDO! ❌"
+    
         
         return apearence
         
@@ -42,6 +45,9 @@ public class TelaDeDetalhesViewModel {
     @objc func buttonFuncionality() {
         if (isFavorite) {
             isFavorite = !isFavorite
+            
+            defaults.setValue(21, forKey: "age")
+            
             print("Remove")
         } else {
             print("Adiciona")
