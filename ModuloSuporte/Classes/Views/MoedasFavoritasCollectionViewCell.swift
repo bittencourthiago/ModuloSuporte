@@ -83,9 +83,7 @@ class MoedasFavoritasCollectionViewCell: UICollectionViewCell {
         } else {
             self.labelValor.text = "0"
         }
-        
     }
-    
 }
 
 //MARK: - ViewConfiguration

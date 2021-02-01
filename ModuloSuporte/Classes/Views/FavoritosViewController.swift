@@ -12,7 +12,6 @@ public class FavoritosViewController: UIViewController {
     //MARK: - atributes
     var defaults = UserDefaults.standard
     var dados:[[String:Any]] = [[:]]
-    var viewModel = FavoritosViewModel()
     
     //MARK: - Criando a tela
     
@@ -62,17 +61,11 @@ public class FavoritosViewController: UIViewController {
 
     public override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        
-
     }
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupViewConfiguration()
-    }  
-    
-    //MARK: - Methods
-    
+    }
 }
 
 //MARK: - ViewConfiguration
@@ -142,14 +135,9 @@ extension FavoritosViewController: UICollectionViewDelegateFlowLayout, UICollect
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MoedasFavoritasCollectionViewCell
         
-        
-
-        //let cell = viewModel.arrayDeCelulas[indexPath.row]
-        
         return cell
     
     }
-    
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

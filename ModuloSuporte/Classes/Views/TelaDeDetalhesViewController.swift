@@ -113,7 +113,6 @@ class TelaDeDetalhesViewController: UIViewController {
         
         centralButton.setTitle(viewModel.highlightedButtonApearence(), for: .highlighted)
     }
-    
 }
 
 extension TelaDeDetalhesViewController: ViewConfiguration {
@@ -125,7 +124,6 @@ extension TelaDeDetalhesViewController: ViewConfiguration {
         headerContainerView.addSubview(imagemPlace)
         headerContainerView.addSubview(centralButton)
     
-        
         view.addSubview(bodyTitleLabel)
         
         view.addSubview(hourTitleLabel)
@@ -165,20 +163,15 @@ extension TelaDeDetalhesViewController: ViewConfiguration {
             make.left.equalTo(headerContainerView).offset(50)
             make.right.equalTo(headerContainerView).inset(50)
             make.height.equalTo(50)
-            
         }
-        
-        
+            
         //MARK: - Body
         bodyTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(340)
             make.left.equalTo(view.snp.left).offset(50)
             make.right.equalTo(view.snp.right).inset(50)
             make.height.equalTo(50)
-            
         }
-        
-
         hourTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator)
             make.left.equalTo(view.snp.left).offset(40)
@@ -187,35 +180,25 @@ extension TelaDeDetalhesViewController: ViewConfiguration {
         hourValueTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator)
             make.right.equalTo(view.snp.right).inset(40)
-            
         }
-        
         monthTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator + 60)
             make.left.equalTo(view.snp.left).offset(40)
-            
         }
         monthValueTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator + 60)
             make.right.equalTo(view.snp.right).inset(40)
-            
         }
-        
         yearTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator + 120)
             make.left.equalTo(view.snp.left).offset(40)
-            
         }
         yearValueTitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(view.snp.top).offset(ValuesToStyle().lineSeparator + 120)
             make.right.equalTo(view.snp.right).inset(40)
-            
         }
-        
     }
     func configureViews() {
         view.backgroundColor = UIColor(red: 0.09, green: 0.09, blue: 0.09, alpha: 1.0)
     }
-    
 }
-
